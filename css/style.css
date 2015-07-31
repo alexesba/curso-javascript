@@ -1,2 +1,14 @@
-.ajax{ color: red; }
-#ajax{ color: green; }
+body{
+  width: 400px;
+}
+input{
+  font-size: 30px;
+  margin: 10px;
+
+}
+p:before{
+  content: 'Number:'
+}
+p.result:before{
+  content: 'Result: '
+}

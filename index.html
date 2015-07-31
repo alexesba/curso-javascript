@@ -3,20 +3,26 @@
       <title> MI PAGINA</title>
       <meta charset='UTF-8'>
       <link rel="stylesheet" href="css/style.css">
+      <script type="text/javascript" src="js/calculator.js"></script>
+      <script type="text/javascript" src="js/app.js"> </script>
     </head>
 
     <body>
-      <h1>Mi página</h1>
-      <p>Mi primer parrafo</p>
-      <p>Mi segundo parrafo</p>
-      <p>Mi tercer parrafo</p>
-      <p>Mi cuarto parrafo</p>
+      <div id="calculadora">
+        <p>
+          <input type="text" name="numero1" value="">
+        </p>
+        <p>
+          <input type="text" name="numero2" value="">
+        </p>
 
-      <span>Mi primer span</span>
-      <span>Mi segundo span</span>
-      <a href="demo">demo</a>
+        <p class='result'>
+          <input type="text" name="result" value="" readonly>
+        </p>
 
-      <script type="text/javascript" src="js/app.js">
-      </script>
+        <input type="button" name="calc" value="+" onClick=calc.calculate(this)>
+        <input type="button" name="calc" value="-" onClick=calc.calculate(this)>
+        <input type="button" name="calc" value="*" onClick=calc.calculate(this)>
+      </div>
     </body>
 </html>
